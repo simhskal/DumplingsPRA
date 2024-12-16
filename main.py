@@ -22,7 +22,8 @@ sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
 ax.set_xlabel('Predicted labels')
 ax.set_ylabel('True labels')
 ax.set_title('Confusion Matrix')
-plt.show()
+# plt.show()
+plt.savefig('confusion_matrix_heatmap.png')
 
 # Output the classification report 
 print("Accuracy:", accuracy)
